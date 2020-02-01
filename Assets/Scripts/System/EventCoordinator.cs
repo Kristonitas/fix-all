@@ -5,6 +5,9 @@ using UnityEngine.Events;
 public class EventCoordinator : Singleton<EventCoordinator>
 {
     public bool enableDebugging;
+    [SerializeField]
+    [StringInList(typeof(PropertyDrawersHelper), "AllEventNames")]
+    List<string> debugIgnoreList = new List<string>();
 
     private Dictionary<string, UnityGameEvent> eventDictionary;
     private Dictionary<string, UnityGameEvent> attachmentsDictionary;
@@ -72,7 +75,6 @@ public class EventCoordinator : Singleton<EventCoordinator>
     public static void TriggerEvent(string eventName, GameMessage message)
     {
         if (Instance == null) return;
-        List<string> ignoreList = new List<string>();
         if (Instance.enableDebugging == true){
             //ignoreList.Add(EventName.System.Sheep.Roam());
             //ignoreList.Add(EventName.System.Economy.EatGrass());
@@ -84,7 +86,7 @@ public class EventCoordinator : Singleton<EventCoordinator>
         if (Instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
             if (Instance.enableDebugging == true){
-                if(!ignoreList.Contains(eventName))
+                if(!Instance.debugIgnoreList.Contains(eventName))
                     Debug.LogWarning("M:"+eventName + ": " +DebugHelper.PrintGameMessage( message));
             }
             thisEvent.Invoke(message);
