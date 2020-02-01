@@ -32,4 +32,10 @@ public class PlayerDataBucket : Singleton<PlayerDataBucket>
                 break;
         }
     }
+    public static bool IsAnyResourceEmpty(){
+        if(Instance.tapeOwned < 0 || Instance.wdOwned < 0)
+            return true;
+        else
+            return false;
+    }
 }

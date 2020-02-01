@@ -65,11 +65,12 @@ public class EventName
             public static string Initialized() { return "System_Environment_Initialized"; }//unused
             public static List<string> Get() { return new List<string> { Initialized() }; }
         }
+        public static string EndGame() { return "EndGame"; }
         public static List<string> Get()
         {
             return new List<string>
             {
-                //MapLayoutChanged(),
+                EndGame()
                 //NextScene(), LoadScene(),s
                 //SceneLoaded()
             }.Concat(Economy.Get()).Concat(Environment.Get()).ToList();
