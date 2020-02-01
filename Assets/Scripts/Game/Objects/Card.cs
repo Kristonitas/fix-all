@@ -8,7 +8,6 @@ public class Card : MonoBehaviour
 
     public Card CreateCard(CardData inputCardData)
     {
-        Debug.Log("CREATE CARD");
         GameObject newCardGO = Instantiate(this.gameObject);
         Card newCard = newCardGO.GetComponent<Card>();
         newCard.cardData = inputCardData;

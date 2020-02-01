@@ -27,13 +27,15 @@ public class Swipe : MonoBehaviour
 
     void OnSwipe(bool swipedRight)
     {
+        CardData cardData = GetComponent<Card>().cardData;
+
         if (swipedRight)
         {
-            EventCoordinator.TriggerEvent(EventName.Input.Swipe.FinishRight(), GameMessage.Write());
+            EventCoordinator.TriggerEvent(EventName.Input.Swipe.FinishRight(), GameMessage.Write().WithCardData(cardData));
         }
         else
         {
-            EventCoordinator.TriggerEvent(EventName.Input.Swipe.FinishLeft(), GameMessage.Write());
+            EventCoordinator.TriggerEvent(EventName.Input.Swipe.FinishLeft(), GameMessage.Write().WithCardData(cardData));
         }
     }
 

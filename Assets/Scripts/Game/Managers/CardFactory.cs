@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class CardFactory : MonoBehaviour
 {
+    public static ResourceItem RightSwipeResource = ResourceItem.Ductape;
+    public static ResourceItem LeftSwipeResource = ResourceItem.Wd;
+
     public Card cardPrefab;
     public Transform cardContainer;
 
@@ -31,11 +34,13 @@ public class CardFactory : MonoBehaviour
 
     void OnSwipeRight(GameMessage msg)
     {
+        EventCoordinator.TriggerEvent(EventName.Input.CardSelected(), GameMessage.Write().WithCardData(msg.cardData).WithResource(RightSwipeResource));
         StartCoroutine(DelayCreateCard());
     }
 
     void OnSwipeLeft(GameMessage msg)
     {
+        EventCoordinator.TriggerEvent(EventName.Input.CardSelected(), GameMessage.Write().WithCardData(msg.cardData).WithResource(LeftSwipeResource));
         StartCoroutine(DelayCreateCard());
     }
 }

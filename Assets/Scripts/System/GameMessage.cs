@@ -31,13 +31,15 @@ public class GameMessage
         transform = value;
         return this;
     }
-    public Card card;
-    public GameMessage WithCard(Card value){
-        card = value;
+    public CardData cardData;
+    public GameMessage WithCardData(CardData value)
+    {
+        cardData = value;
         return this;
     }
     public ResourceItem resourceItem;
-    public GameMessage WithResource(ResourceItem value){
+    public GameMessage WithResource(ResourceItem value)
+    {
         resourceItem = value;
         return this;
     }
