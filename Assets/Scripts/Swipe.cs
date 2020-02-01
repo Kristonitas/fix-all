@@ -2,7 +2,9 @@
 
 public class Swipe : MonoBehaviour
 {
+    public TextAsset text;
     public float swipeRadius = 10;
+    public SpriteRenderer cover;
 
     private float rotation = 0;
     private float verticalOffset = 0;
@@ -15,6 +17,11 @@ public class Swipe : MonoBehaviour
     {
         content = transform.GetChild(0);
         content.localPosition = new Vector3(0, this.swipeRadius * this.AnchorMultiplier, 0);
+
+        // TODO: remove
+        CardImporter.Import();
+        CardData card = CardCoordinator.GetCard(0);
+        this.cover.sprite = card.coverImage;
     }
 
     float AnchorMultiplier

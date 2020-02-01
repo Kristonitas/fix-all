@@ -4,7 +4,7 @@ public class CardImporter
 {
     private static CardData MakeCard(string[] data)
     {
-        Sprite cover = (Sprite)Resources.Load(data[1]);
+        Sprite cover = Resources.Load<Sprite>(data[1]);
 
         Answer ductapeGood, ductapeBad, wdGood, wdBad;
 
