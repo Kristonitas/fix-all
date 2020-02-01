@@ -2,9 +2,7 @@
 
 public class Swipe : MonoBehaviour
 {
-    public TextAsset text;
     public float swipeRadius = 10;
-    public SpriteRenderer cover;
 
     private float rotation = 0;
     private float verticalOffset = 0;
@@ -17,11 +15,6 @@ public class Swipe : MonoBehaviour
     {
         content = transform.GetChild(0);
         content.localPosition = new Vector3(0, this.swipeRadius * this.AnchorMultiplier, 0);
-
-        // TODO: remove
-        CardImporter.Import();
-        CardData card = CardCoordinator.GetCard(0);
-        this.cover.sprite = card.coverImage;
     }
 
     float AnchorMultiplier
@@ -29,6 +22,18 @@ public class Swipe : MonoBehaviour
         get
         {
             return this.anchorTop ? -1 : 1;
+        }
+    }
+
+    void OnSwipe(bool swipedRight)
+    {
+        if (swipedRight)
+        {
+            EventCoordinator.TriggerEvent(EventName.Input.Swipe.FinishRight(), GameMessage.Write());
+        }
+        else
+        {
+            EventCoordinator.TriggerEvent(EventName.Input.Swipe.FinishLeft(), GameMessage.Write());
         }
     }
 
@@ -73,6 +78,7 @@ public class Swipe : MonoBehaviour
             if (Mathf.Abs(this.rotation) > 2)
             {
                 this.goOut = true;
+                OnSwipe(this.rotation > 0);
             }
         }
         else
@@ -83,11 +89,13 @@ public class Swipe : MonoBehaviour
                 {
                     this.goOut = true;
                     this.rotation = 0.1f;
+                    OnSwipe(true);
                 }
                 else if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
                     this.goOut = true;
                     this.rotation = -0.1f;
+                    OnSwipe(false);
                 }
 
                 if (this.goOut)

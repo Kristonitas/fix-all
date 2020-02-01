@@ -1,17 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
+// using UnityEngine.UIElements;
 public class Card : MonoBehaviour
 {
     public CardData cardData;
-    public Image coverImage;
+    // public Image coverImage;
+    public SpriteRenderer renderer;
 
-    public GameObject CreateCard (CardData inputCardData){
+    public Card CreateCard(CardData inputCardData)
+    {
+        Debug.Log("CREATE CARD");
         GameObject newCardGO = Instantiate(this.gameObject);
         Card newCard = newCardGO.GetComponent<Card>();
         newCard.cardData = inputCardData;
-        newCard.coverImage.image = inputCardData.coverImage.texture;
-        return newCardGO;
+        newCard.renderer.sprite = inputCardData.coverImage;
+
+        return newCard;
     }
 }
