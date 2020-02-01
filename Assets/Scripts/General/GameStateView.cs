@@ -10,9 +10,11 @@ public class GameStateView : Singleton<GameStateView>
     void Start()
     {
         EventCoordinator.StartListening(EventName.Input.StartGame(), OnStartGame);
+        EventCoordinator.StartListening(EventName.System.EndGame(), OnEndGame);
     }
     void OnDestroy(){
         EventCoordinator.StopListening(EventName.Input.StartGame(), OnStartGame);
+        EventCoordinator.StopListening(EventName.System.EndGame(), OnEndGame);
     }
     void OnStartGame(GameMessage msg){
         // Set a bit at position to 1.
