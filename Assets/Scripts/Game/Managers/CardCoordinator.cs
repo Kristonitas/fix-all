@@ -19,8 +19,8 @@ public class CardCoordinator : Singleton<CardCoordinator>
         }
     }
 
-    public static void RandomizeCardsForPlayer(string playerName){
-        Random.seed = playerName.GetHashCode();
+    public static void RandomizeCardsForPlayer(){
+        Random.seed = PlayerDataBucket.GetPlayerName().GetHashCode();
         for(int i = 0; i < Instance.cards.Count; i++){
             bool tapeIsRightResrouce  = (Random.value > 0.5f);
             if(tapeIsRightResrouce)

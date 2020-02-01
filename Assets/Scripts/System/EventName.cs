@@ -49,7 +49,8 @@ public class EventName
     public class System
     {
         public class Economy{
-            public static string ModifyResource() { return "Economy_ModifyResource"; }//unused
+            public static string ModifyResource() { return "Economy_ModifyResource"; }
+            public static string ResourceChanged() { return "Economy_ResourceChanged"; }
             public static List<string> Get() { return new List<string> { ModifyResource()}; }          
         }
         public class Environment{

@@ -5,10 +5,31 @@ using UnityEngine;
 public class PlayerDataBucket : Singleton<PlayerDataBucket>
 {
     string playerName;
+    public float tapeOwned;
+    public float wdOwned;
     public static string GetPlayerName(){
         return Instance.playerName;
     }
     public static void SetPlayerName(string inuputName){
         Instance.playerName = inuputName;
+    }
+    public static float GetResource(ResourceItem resourceType){
+        switch(resourceType){
+            case ResourceItem.Ductape:
+                return Instance.tapeOwned;
+            case ResourceItem.Wd:
+                return Instance.wdOwned;
+        }
+        return 0;
+    }
+    public static void AddResource(float amount, ResourceItem resourceType){
+        switch(resourceType){
+            case ResourceItem.Ductape:
+                Instance.tapeOwned+=amount;
+                break;
+            case ResourceItem.Wd:
+                Instance.wdOwned+=amount;
+                break;
+        }
     }
 }

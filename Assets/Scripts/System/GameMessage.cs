@@ -12,7 +12,12 @@ public class GameMessage
         strMessage = value;
         return this;
     }
-
+    public float floatMessage;
+    public GameMessage WithFloatMessage(float value)
+    {
+        floatMessage = value;
+        return this;
+    }
     public Vector2 coordinates;
     public GameMessage WithCoordinates(Vector2 value)
     {
@@ -29,6 +34,11 @@ public class GameMessage
     public Card card;
     public GameMessage WithCard(Card value){
         card = value;
+        return this;
+    }
+    public ResourceItem resourceItem;
+    public GameMessage WithResource(ResourceItem value){
+        resourceItem = value;
         return this;
     }
 }
