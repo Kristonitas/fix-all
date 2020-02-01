@@ -19,9 +19,19 @@ public class CardCoordinator : Singleton<CardCoordinator>
         }
     }
 
-    public static void RandomizeCardResources(){
-        foreach(CardData card in Instance.cards){
-            
+    public static void RandomizeCardsForPlayer(string playerName){
+        Random.seed = playerName.GetHashCode();
+        for(int i = 0; i < Instance.cards.Count; i++){
+            bool tapeIsRightResrouce  = (Random.value > 0.5f);
+            if(tapeIsRightResrouce)
+                Instance.cards[i].correctResrouce = ResourceItem.Ductape;
+            else
+                Instance.cards[i].correctResrouce = ResourceItem.Wd;
+
+            CardData tempCard = Instance.cards[i];
+            int randomIndex = Random.RandomRange(i, Instance.cards.Count);
+            Instance.cards[i] = Instance.cards[randomIndex];
+            Instance.cards[randomIndex] = tempCard;
         }
     }
 }   
