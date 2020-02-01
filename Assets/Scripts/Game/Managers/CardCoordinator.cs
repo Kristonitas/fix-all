@@ -20,7 +20,7 @@ public class CardCoordinator : Singleton<CardCoordinator>
     }
 
     public static void RandomizeCardsForPlayer(){
-        Random.seed = PlayerDataBucket.GetPlayerName().GetHashCode();
+        Random.InitState(PlayerDataBucket.GetPlayerName().GetHashCode());
         for(int i = 0; i < Instance.cards.Count; i++){
             bool tapeIsRightResrouce  = (Random.value > 0.5f);
             if(tapeIsRightResrouce)
@@ -29,7 +29,7 @@ public class CardCoordinator : Singleton<CardCoordinator>
                 Instance.cards[i].correctResrouce = ResourceItem.Wd;
 
             CardData tempCard = Instance.cards[i];
-            int randomIndex = Random.RandomRange(i, Instance.cards.Count);
+            int randomIndex = Random.Range(i, Instance.cards.Count);
             Instance.cards[i] = Instance.cards[randomIndex];
             Instance.cards[randomIndex] = tempCard;
         }
