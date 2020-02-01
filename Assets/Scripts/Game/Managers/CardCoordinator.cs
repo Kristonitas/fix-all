@@ -2,17 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardCoordinator : MonoBehaviour
+public class CardCoordinator : Singleton<CardCoordinator>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    List<CardData> cards = new List<CardData>();
+
+    public static void AddCard(CardData newCardData){
+        Instance.cards.Add(newCardData);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public static CardData GetCard(int index){
+        if(Instance.cards.Count > index){
+            return Instance.cards[index];
+        } else {
+            Debug.LogError("Index of GetCard too high, not enough cards in list!");
+            return null;
+        }
     }
-}
+
+    public static void RandomizeCardResources(){
+        foreach(CardData card in Instance.cards){
+            
+        }
+    }
+}   
