@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 public class EventChain : MonoBehaviour {
     void Start () {
-        EventCoordinator.Attach(EventName.Input.StartGame(), OnStartGame);
+        EventCoordinator.Attach(EventName.System.EndGame(), OnEndGame);
     }
     void OnDestroy() {
-        EventCoordinator.Detach(EventName.Input.StartGame(), OnStartGame);
+        EventCoordinator.Detach(EventName.System.EndGame(), OnEndGame);
     }
-    void OnStartGame(GameMessage msg)
+    void OnEndGame(GameMessage msg)
     {
-        EventCoordinator.TriggerEvent(EventName.System.Environment.Initialized(), msg);
+        EventCoordinator.TriggerEvent(EventName.UI.ShowPostScreen(), GameMessage.Write());
     }
-
 }

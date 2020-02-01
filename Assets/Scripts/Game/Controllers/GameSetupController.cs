@@ -14,7 +14,6 @@ public class GameSetupController : MonoBehaviour
 
     void OnGameStart(GameMessage msg)
     {
-        PlayerDataBucket.SetPlayerName(msg.strMessage);
         CardCoordinator.RandomizeCardsForPlayer();
     }
 }

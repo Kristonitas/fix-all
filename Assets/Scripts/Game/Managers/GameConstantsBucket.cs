@@ -20,4 +20,13 @@ public class GameConstantsBucket : Singleton<GameConstantsBucket>
     [Tooltip("Text floats how much does this slow down over time")]
     [SerializeField] float numberTextFadeSlowdownFactor = 0.002f;
     public static float NumberTextFadeSlowdownFactor{        get{return Instance.numberTextFadeSlowdownFactor;}    }
+    [Range(0,5f)]
+    [Tooltip("the multiplier of how many times one resource to guess rigth more than other to get the ending")]
+    [SerializeField] float endingResourceMultiplier = 2f;
+    public static float EndingResourceMultiplier{        get{return Instance.endingResourceMultiplier;}    }
+    [Range(0,10f)]
+    [Tooltip("the multiplier of how many times one resource to guess rigth more than other to get the ending")]
+    [SerializeField] float endingResourceDifference = 5f;
+    public static float EndingResourceDifference{        get{return Instance.endingResourceDifference;}    }
+
 }

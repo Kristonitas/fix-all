@@ -12,6 +12,12 @@ public class GameMessage
         strMessage = value;
         return this;
     }
+    public int intMessage;
+    public GameMessage WithIntMessage(int value)
+    {
+        intMessage = value;
+        return this;
+    }
     public float floatMessage;
     public GameMessage WithFloatMessage(float value)
     {

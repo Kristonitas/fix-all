@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PlayerDataBucket : Singleton<PlayerDataBucket>
 {
-    string playerName;
+    string playerName = "";
     public float tapeOwned;
     public float wdOwned;
     public static string GetPlayerName(){
+        Debug.Log(Instance.playerName);
         return Instance.playerName;
     }
     public static void SetPlayerName(string inuputName){
+        Debug.Log(Instance.playerName);
         Instance.playerName = inuputName;
     }
     public static float GetResource(ResourceItem resourceType){

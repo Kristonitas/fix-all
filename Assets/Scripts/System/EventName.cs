@@ -8,7 +8,8 @@ public class EventName
         public static string CardCreated() { return "UI_ShowNextCard"; }
         public static string ShowNextCard() { return "UI_ShowNextCard"; }
         public static string ShowResult() { return "UI_ShowResult"; }
-        public static List<string> Get() { return new List<string> { CardCreated(), ShowNextCard(), ShowResult() }; }
+        public static string ShowPostScreen() { return "UI_ShowPostScreen"; }
+        public static List<string> Get() { return new List<string> { CardCreated(), ShowNextCard(), ShowPostScreen() }; }
     }
     /*     public class Editor
         {
@@ -60,10 +61,10 @@ public class EventName
             public static string ResourceChanged() { return "Economy_ResourceChanged"; }
             public static List<string> Get() { return new List<string> { ModifyResource() }; }
         }
-        public class Environment
+        public class Story
         {
-            public static string Initialized() { return "System_Environment_Initialized"; }//unused
-            public static List<string> Get() { return new List<string> { Initialized() }; }
+            public static string UnlockEnding() { return "System_Story_UnlockEnding"; }//unused
+            public static List<string> Get() { return new List<string> { UnlockEnding() }; }
         }
         public static string EndGame() { return "EndGame"; }
         public static List<string> Get()
@@ -73,7 +74,7 @@ public class EventName
                 EndGame()
                 //NextScene(), LoadScene(),s
                 //SceneLoaded()
-            }.Concat(Economy.Get()).Concat(Environment.Get()).ToList();
+            }.Concat(Economy.Get()).Concat(Story.Get()).ToList();
         }
     }
     /*     public class AI

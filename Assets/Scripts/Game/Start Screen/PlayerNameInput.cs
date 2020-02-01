@@ -6,6 +6,6 @@ public class PlayerNameInput : MonoBehaviour
 {
     public void InputEditedCallback(string inputName)
     {
-        EventCoordinator.TriggerEvent(EventName.Input.PlayerName(), GameMessage.Write().WithStringMessage(inputName));
+        PlayerDataBucket.SetPlayerName(inputName);
     }
 }
