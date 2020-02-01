@@ -35,9 +35,11 @@ public class EventName
             public static string PlayerLeft() { return "PlayerLeft"; }
             public static List<string> Get() { return new List<string> {View(), PlayerJoined(),PlayerLeft() }; }
         } */
+        public static string PlayerName() {return "Input_PlayerName";}
         public static string StartGame() { return "StartGame"; }
+        public static string ResetGame() { return "ResetGame"; }
         public static List<string> Get() { return new List<string> {
-            StartGame()
+            StartGame(),PlayerName(),ResetGame()
             }.Concat(Swipe.Get())
                 //.Concat(SheepUpgrade.Get())
                 .Concat(Tap.Get())

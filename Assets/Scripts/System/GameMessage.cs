@@ -26,4 +26,9 @@ public class GameMessage
         transform = value;
         return this;
     }
+    public Card card;
+    public GameMessage WithCard(Card value){
+        card = value;
+        return this;
+    }
 }
