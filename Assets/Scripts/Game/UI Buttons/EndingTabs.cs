@@ -15,11 +15,6 @@ public class EndingTabs : MonoBehaviour
 
     public Color tabActiveColor;
     public Color tabPassiveColor;
-    
-    void Start()
-    {
-        
-    }
 
     public void Button(int id){
         ResetTabColor();
