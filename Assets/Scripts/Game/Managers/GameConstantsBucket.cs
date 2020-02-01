@@ -14,5 +14,6 @@ public class GameConstantsBucket : Singleton<GameConstantsBucket>
 
     [Range(0,1)]
     [Tooltip("Text floats fade speed")]
-    [SerializeField] float playfieldFadeProportion = 1f;
+    [SerializeField] float numberTextFadeTime = 0.5f;
+    public static float NumberTextFadeTime{        get{return Instance.numberTextFadeTime;}    }
 }

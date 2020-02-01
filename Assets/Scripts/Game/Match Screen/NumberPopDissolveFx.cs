@@ -17,7 +17,7 @@ public class NumberPopDissolveFx : MonoBehaviour
 
     void Update()
     {
-        transform.position += new Vector3(0, 5f, 0);
+        transform.position += new Vector3(0, 2.5f * GameConstantsBucket.NumberTextFadeTime, 0);
         colorReduce++;
         if(textCol.a - colorReduce * colorFadeSpeed < 0)
             Destroy(gameObject);
