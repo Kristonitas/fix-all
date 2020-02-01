@@ -21,13 +21,16 @@ public class ResourceNumberPop : MonoBehaviour
             GameObject newTextGO = Instantiate(textGO, transform.parent);
             newTextGO.transform.localPosition = textGO.transform.localPosition;
             TMPro.TextMeshProUGUI tmpText = newTextGO.GetComponent<TMPro.TextMeshProUGUI>();
-            tmpText.text = msg.floatMessage.ToString();
 
             NumberPopDissolveFx fx = newTextGO.AddComponent<NumberPopDissolveFx>();
-            if(msg.floatMessage < 0)
+            if(msg.floatMessage < 0){
+                tmpText.text = msg.floatMessage.ToString();
                 tmpText.color = GameConstantsBucket.ResourceColorNegative;
-            else
+            }
+            else{
+                tmpText.text = "+"+msg.floatMessage.ToString();
                 tmpText.color = GameConstantsBucket.ResourceColorPositive;
+            }
             fx.Init(tmpText);
         }
     }

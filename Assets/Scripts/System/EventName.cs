@@ -37,6 +37,7 @@ public class EventName
                     public static string PlayerLeft() { return "PlayerLeft"; }
                     public static List<string> Get() { return new List<string> {View(), PlayerJoined(),PlayerLeft() }; }
                 } */
+        public static string CardSelected() { return "Input_CardSelected"; }
         public static string PlayerName() { return "Input_PlayerName"; }
         public static string StartGame() { return "StartGame"; }
         public static string ResetGame() { return "ResetGame"; }

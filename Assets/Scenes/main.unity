@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 29.4
+  m_fontSize: 28.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 29.4
+  m_fontSize: 28.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2545,6 +2545,7 @@ MonoBehaviour:
   resourceColorNegative: {r: 1, g: 0, b: 0, a: 1}
   resourceColorPositive: {r: 0, g: 1, b: 0, a: 1}
   numberTextFadeTime: 0.5
+  numberTextFadeSlowdownFactor: 0.002
 --- !u!1 &1967693445
 GameObject:
   m_ObjectHideFlags: 0
