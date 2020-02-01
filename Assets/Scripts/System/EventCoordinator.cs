@@ -74,10 +74,10 @@ public class EventCoordinator : Singleton<EventCoordinator>
         if (Instance == null) return;
         List<string> ignoreList = new List<string>();
         if (Instance.enableDebugging == true){
-            ignoreList.Add(EventName.System.Sheep.Roam());
-            ignoreList.Add(EventName.System.Economy.EatGrass());
-            ignoreList.Add(EventName.System.Player.PlayerCardsSorted());
-            ignoreList.Add(EventName.System.Player.ProfileUpdate());
+            //ignoreList.Add(EventName.System.Sheep.Roam());
+            //ignoreList.Add(EventName.System.Economy.EatGrass());
+            //ignoreList.Add(EventName.System.Player.PlayerCardsSorted());
+            //ignoreList.Add(EventName.System.Player.ProfileUpdate());
             //ignoreList.Add(EventName.System.BaseTargetUpdate());
         }
         UnityGameEvent thisEvent = null;
