@@ -28,7 +28,7 @@ public class Swipe : MonoBehaviour
     {
         get
         {
-            return this.anchorTop ? 1 : -1;
+            return this.anchorTop ? -1 : 1;
         }
     }
 
@@ -49,7 +49,7 @@ public class Swipe : MonoBehaviour
         {
             // TODO: somehow include existing vertical offset
             start = localPos;
-            if (start.y < 0)
+            if (start.y > 0)
             {
                 this.anchorTop = false;
             }
@@ -70,17 +70,40 @@ public class Swipe : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            if (Mathf.Abs(this.rotation) > 10)
+            if (Mathf.Abs(this.rotation) > 2)
             {
                 this.goOut = true;
             }
         }
         else
         {
+            if (!this.goOut && Mathf.Abs(this.rotation) < 1)
+            {
+                if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    this.goOut = true;
+                    this.rotation = 0.1f;
+                }
+                else if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    this.goOut = true;
+                    this.rotation = -0.1f;
+                }
+
+                if (this.goOut)
+                {
+                    this.start = new Vector2();
+                    content.localPosition = new Vector3(0, this.swipeRadius, 0);
+                    this.anchorTop = false;
+                }
+            }
+
+
             if (this.goOut)
             {
-                this.rotation = this.rotation * Mathf.Pow(2f, Time.deltaTime * 10);
-                if (Mathf.Abs(this.rotation) > 50)
+                this.rotation = this.rotation * Mathf.Pow(1.1f, Time.deltaTime * 10);
+                this.rotation += 40 * Time.deltaTime * Mathf.Sign(this.rotation);
+                if (Mathf.Abs(this.rotation) > 20)
                 {
                     GameObject.Destroy(gameObject);
                 }
