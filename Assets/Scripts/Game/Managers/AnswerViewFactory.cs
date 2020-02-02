@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Linq;
 
 public class AnswerViewFactory : MonoBehaviour
 {
@@ -6,15 +7,14 @@ public class AnswerViewFactory : MonoBehaviour
 
     void Start()
     {
-        // TEST CODE
-        CardImporter.Import();
+        EventCoordinator.StartListening(EventName.Input.CardSelected(), OnCardSelected);
     }
 
-    void Update()
+    void OnCardSelected(GameMessage msg)
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            answerViewPrefab.CreateCard(CardCoordinator.GetCard(0).answers[0]);
-        }
+        bool goodSelected = msg.cardData.correctResrouce == msg.resourceItem;
+        Answer answer = msg.cardData.answers.Where(x => x.good == goodSelected && x.resource == msg.resourceItem).FirstOrDefault();
+
+        answerViewPrefab.CreateCard(answer);
     }
 }

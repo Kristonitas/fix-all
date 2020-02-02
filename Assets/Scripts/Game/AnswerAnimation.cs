@@ -27,7 +27,6 @@ public class AnswerAnimation : MonoBehaviour
 
             float alphaIn = Mathf.Clamp01(Mathf.Pow(dt * 6, 3));
             float alphaOut = Mathf.Clamp01(Mathf.Pow(8 - dt * 8, 3));
-            Debug.Log("in: " + alphaIn + " out: " + alphaOut);
             textMesh.alpha = Mathf.Min(alphaIn, alphaOut);
 
             yield return null;
