@@ -10,6 +10,11 @@ public class AnswerViewFactory : MonoBehaviour
         EventCoordinator.StartListening(EventName.Input.CardSelected(), OnCardSelected);
     }
 
+    void OnDestroy()
+    {
+        EventCoordinator.StopListening(EventName.Input.CardSelected(), OnCardSelected);
+    }
+
     void OnCardSelected(GameMessage msg)
     {
         bool goodSelected = msg.cardData.correctResrouce == msg.resourceItem;

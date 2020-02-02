@@ -19,6 +19,12 @@ public class CardFactory : MonoBehaviour
         EventCoordinator.StartListening(EventName.Input.Swipe.FinishLeft(), OnSwipeLeft);
     }
 
+    void OnDestroy()
+    {
+        EventCoordinator.StopListening(EventName.Input.Swipe.FinishRight(), OnSwipeRight);
+        EventCoordinator.StopListening(EventName.Input.Swipe.FinishLeft(), OnSwipeLeft);
+    }
+
     void CreateCard()
     {
         CardData cardData = CardCoordinator.GetNextCardData();
@@ -28,7 +34,7 @@ public class CardFactory : MonoBehaviour
 
     IEnumerator DelayCreateCard()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         CreateCard();
     }
 

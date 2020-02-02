@@ -4,7 +4,7 @@ using TMPro;
 
 public class AnswerAnimation : MonoBehaviour
 {
-    static float Duration = 3;
+    static float Duration = 2;
 
     public TextMeshPro textMesh;
     public Transform content;
