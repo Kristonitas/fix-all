@@ -13,3 +13,86 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	10	It's not dirty anymore	Now the camera is broken too	The next one you stick to your hand	You can't see the screen anymore
 	11	You oil the wheels for a smooth ride	Sprayed the whole sky is on fire	You wrap yourself in for a comfy landing	You made a ductape parachute and off you go
 	12	The legos are clean now	You slip and fall on your back. on the legos	You make a tape shoe	You don't play your Lego like that
+	13	You slip off all your clothes	Now its off completely	You have acquired a new accessory	Now it won't move at all
+	14	The text is blurred now - so no mistakes there	You will never erase this stain on yourself	You stick it on the mistakes	You are one of them now
+	15	The arrow now slipps through cleanly	She is not afraid of that	You immobilize her smile	She falls in love with you
+	16	You won't slip like that, ever!	You are married now. Congratulations	You make knee armor	You can't walk anymore
+	17	Keyboard is now typing so very smoothly	Coffee have lost it`s taste now	Make a ductape cup and just continue drinking your coffee	You only type in full words now
+	18	You slip unnoticed	Unfortunately your pants is on fire	Your pants are whole again	Watch out for the fashion police
+	19	The WD oils your brain	Now you can't remember anything anymore	you remember you password is stuck on your forehead	You stick and pull your all your hair out and still can't remember
+	20	Slide away smoother than anyone ever did	Just oil your car and drive away	You have just discovered a multi-blade shovel congratulations	Tape yourself to a shovel and blisfuly glide away from responsabilities
+	21	You skip the song	You can't hear anything anymore	You isolate you ears from the noice	Now that song is stuck in your head forever
+	22	You get high on the fumes and all seems fine	You get poisoned on the fumes you tried to inhale	You play a prank	You can't mask that
+	23	You propel yourself to dryland	You got finned for polluting the envirement	You build a wraft and swim away	You made a diving suit and swam away
+	24	You clean the top windows	You slip from the roof and start drowning	You stick youself at the top	You sare stuck and can't evacuate
+	25	You performed smoothest rage quit in the history of man kind	Blow your brain and avoid it all	You stick it up for your oppressors	You rolled with it in ductape and now you`re stuck together
+	26	You slip into trans and withstand it	You can't escape the sound	You crafted ductape mittens to protects it`s nails	You made one great sound issolation for your ears
+	27	You hack it	You can't spin anymore your fingers are too slippery	You tape spins for you	The tape won't remember for you
+	28	You slide through the crack in	You slide under the car	You tape and crack the window open	You tape youself to the car and ask for the pull
+	29	You deterge every single dog from the town	Horribly seasoned hot dog	You wrap it`s teeth up	Bring the tape to me good boy
+	30	The WD40 now talks too	You slip away from the reality completely	You stick to yourself	You get too attached to the one on the left
+	31	Now you can slither even through closed doors	You made a stink cloud and caused panic	You glued some passengers to the outside of the bus	You streached the tape and went for bus skiing
+	32	You go supersonic sliding	You clean the tire	You fix the tire	The wheel won't spin anymore
+	33	You slip the lock of your neighbour and start living there	London's burning	You make a tape house to live in	You get stuck to the hot hot iron
+	34	Your hair is slipery shiny now	Your hair smells now	You stick to it and finish hairbrushing nicely	Your hair is sticky now too
+	35	Wallet slips the thief's hand and you hear it	The wallet slips away on it's own	You duct tape your wallets to yourself for life	You can't open your wallet anymore
+	36	Whats stuck is out now	You drink the WD		
+	37				
+	38				
+	39				
+	40	You rince it all away to cleanliness	You have smoothed the extraction 	You succesfuly funneled it out	You have manned up and kept it all together
+	41				
+	42				
+	43			No more plot holes there is	Lets stick it to the cavalery
+	44				
+	45	You heat it up to relieve pain	You oil the cover for more smoother transitions		
+	46				
+	47				
+	48				
+	49				
+	50				
+	51				
+	52				
+	53				
+	54				
+	55				
+	56				
+	57				
+	58				
+	59				
+	60				
+	61				
+	62				
+	63				
+	64				
+	65				
+	66				
+	67				
+	68				
+	69	You slip pass by the knight	Oh you`ve slipped sir	You don`t have flesh wounds any more	You came back for a rematch
+	70				
+	71				
+	72				
+	73				
+	74				
+	75				
+	76				
+	77				
+	78				
+	79				
+	80				
+	81				
+	82				
+	83				
+	84				
+	85				
+	86				
+	87				
+	88				
+	89				
+	90	Blow the peal away and have a snack	Oh my you have slipped	Stick it where it belongs	Wrap it to keep it fresh and safe
+	91				
+	92				
+	93				
+	94				You can swim like a duck now
+	95	Blow all your problems away with WD40	You slipped into bed again 		
