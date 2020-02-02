@@ -66,13 +66,14 @@ public class EventName
             public static string UnlockEnding() { return "System_Story_UnlockEnding"; }//unused
             public static List<string> Get() { return new List<string> { UnlockEnding() }; }
         }
+        public static string CardsImported() { return "CardsImported"; }
         public static string MatchStarted() { return "MatchStarted"; }
         public static string EndGame() { return "EndGame"; }
         public static List<string> Get()
         {
             return new List<string>
             {
-                EndGame(),MatchStarted()
+                EndGame(),MatchStarted(),CardsImported()
                 //NextScene(), LoadScene(),s
                 //SceneLoaded()
             }.Concat(Economy.Get()).Concat(Story.Get()).ToList();

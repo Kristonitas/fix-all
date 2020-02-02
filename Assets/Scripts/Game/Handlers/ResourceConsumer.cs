@@ -13,10 +13,10 @@ public class ResourceConsumer : MonoBehaviour
     }
     void OnModifyResource(GameMessage msg)
     {
-        if(msg.resourceItem == msg.cardData.correctResrouce)
-            return;
-        Answer answer = msg.cardData.answers.Where(x => !x.good && x.resource == msg.resourceItem).FirstOrDefault();
+        bool goodSelected = msg.cardData.correctResrouce == msg.resourceItem;
+        Answer answer = msg.cardData.answers.Where(x => x.good == goodSelected && x.resource == msg.resourceItem).FirstOrDefault();
         float amount = answer.cost;
+        
         EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithResource(msg.resourceItem).WithFloatMessage(-amount));
     }
 }

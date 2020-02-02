@@ -21,7 +21,9 @@ public class CardCoordinator : Singleton<CardCoordinator>
     }
     public static CardData GetNextCardData(){
         if(Instance.cards.Count > Instance.currentCardIndex){
-            return Instance.cards[Instance.currentCardIndex];
+            CardData nextcard = Instance.cards[Instance.currentCardIndex];
+            Instance.currentCardIndex++;
+            return nextcard;
         } else {
             Debug.LogError("Out of cards, not enough cards in list!");
             return null;

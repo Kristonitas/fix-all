@@ -6,13 +6,13 @@ public class GameSetupController : MonoBehaviour
 {
     void Start()
     {
-        EventCoordinator.StartListening(EventName.Input.StartGame(), OnGameStart);
+        EventCoordinator.StartListening(EventName.System.CardsImported(), OnCardsImported);
     }
     void OnDestroy(){
-        EventCoordinator.StopListening(EventName.Input.StartGame(), OnGameStart);
+        EventCoordinator.StopListening(EventName.System.CardsImported(), OnCardsImported);
     }
 
-    void OnGameStart(GameMessage msg)
+    void OnCardsImported(GameMessage msg)
     {
         CardCoordinator.RandomizeCardsForPlayer();
         EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(0).WithResource(ResourceItem.Ductape));
