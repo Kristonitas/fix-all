@@ -19,7 +19,6 @@ public class ResultWriter : MonoBehaviour
         EventCoordinator.StopListening(EventName.UI.ShowPostScreen(), OnShowPostScreen);
         EventCoordinator.StopListening(EventName.Input.ResetGame(), OnReset);
     }
-    // Update is called once per frame
     void OnCardSelected(GameMessage msg)
     {
         results.Add(new GuessResult(msg.cardData, msg.resourceItem));

@@ -21,6 +21,7 @@ public class GameSetupController : MonoBehaviour
             wdAmount += GameConstantsBucket.EndingResourceAward;
         if(PlayerPrefs.GetInt("Ending2") > 0)
             tapeAmount += GameConstantsBucket.EndingResourceAward;
+            
         EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(tapeAmount).WithResource(ResourceItem.Ductape));
         EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(wdAmount).WithResource(ResourceItem.Wd));
     }

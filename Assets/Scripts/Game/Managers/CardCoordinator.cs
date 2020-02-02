@@ -23,6 +23,7 @@ public class CardCoordinator : Singleton<CardCoordinator>
         if(Instance.cards.Count > Instance.currentCardIndex){
             CardData nextcard = Instance.cards[Instance.currentCardIndex];
             Instance.currentCardIndex++;
+            Debug.Log("next card index is "+Instance.currentCardIndex);
             return nextcard;
         } else {
             EventCoordinator.TriggerEvent(EventName.System.EndGame(), GameMessage.Write());
@@ -32,7 +33,7 @@ public class CardCoordinator : Singleton<CardCoordinator>
     }
     public static void RandomizeCardsForPlayer(){
         Instance.randomSeed = PlayerDataBucket.GetPlayerName().GetHashCode();
-        //Debug.Log("seed:"+Instance.randomSeed);
+        Debug.Log("seed:"+Instance.randomSeed);
         Random.InitState(Instance.randomSeed);
         for(int i = 0; i < Instance.cards.Count; i++){
             bool tapeIsRightResrouce  = (Random.value > 0.5f);
