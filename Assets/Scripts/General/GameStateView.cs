@@ -15,7 +15,7 @@ public class GameStateView : Singleton<GameStateView>
     }
     void OnDestroy(){
         EventCoordinator.StopListening(EventName.Input.StartGame(), OnStartGame);
-        EventCoordinator.StartListening(EventName.Input.ResetGame(), OnResetGame);
+        EventCoordinator.StopListening(EventName.Input.ResetGame(), OnResetGame);
         EventCoordinator.StopListening(EventName.System.EndGame(), OnEndGame);
     }
     void OnStartGame(GameMessage msg){

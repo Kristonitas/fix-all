@@ -15,5 +15,7 @@ public class GameSetupController : MonoBehaviour
     void OnGameStart(GameMessage msg)
     {
         CardCoordinator.RandomizeCardsForPlayer();
+        EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(0).WithResource(ResourceItem.Ductape));
+        EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(0).WithResource(ResourceItem.Wd));
     }
 }

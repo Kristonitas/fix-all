@@ -12,6 +12,7 @@ public class ViewController : MonoBehaviour
         EventCoordinator.StartListening(EventName.Input.StartGame(), OnGameStart);
         EventCoordinator.StartListening(EventName.Input.ResetGame(), OnGameReset);
         EventCoordinator.StartListening(EventName.System.EndGame(), OnEndGame);
+        GameLaunched();
     }
     void OnDestroy(){
         EventCoordinator.StopListening(EventName.Input.StartGame(), OnGameStart);
@@ -34,5 +35,10 @@ public class ViewController : MonoBehaviour
         startViewPanel.SetActive(false);
         matchViewPanel.SetActive(false);
         postViewPanel.SetActive(true);
+    }
+    void GameLaunched(){
+        startViewPanel.SetActive(true);
+        matchViewPanel.SetActive(false);
+        postViewPanel.SetActive(false);
     }
 }
