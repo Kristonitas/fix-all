@@ -11,11 +11,13 @@ public class ResultWriter : MonoBehaviour
     {
         EventCoordinator.StartListening(EventName.Input.CardSelected(), OnCardSelected);
         EventCoordinator.StartListening(EventName.UI.ShowPostScreen(), OnShowPostScreen);
+        EventCoordinator.StartListening(EventName.Input.ResetGame(), OnReset);
     }
     void OnDestroy()
     {
         EventCoordinator.StopListening(EventName.Input.CardSelected(), OnCardSelected);
         EventCoordinator.StopListening(EventName.UI.ShowPostScreen(), OnShowPostScreen);
+        EventCoordinator.StopListening(EventName.Input.ResetGame(), OnReset);
     }
     // Update is called once per frame
     void OnCardSelected(GameMessage msg)
@@ -27,5 +29,10 @@ public class ResultWriter : MonoBehaviour
             GameObject res = resultTilePrefab.Create(results[i]);
             res.transform.parent = resultTileContainer;
         }
+    }
+    void OnReset(GameMessage msg){
+        Debug.Log("clear");
+        results.Clear();
+        CardCoordinator.Instance.currentCardIndex = 0;
     }
 }

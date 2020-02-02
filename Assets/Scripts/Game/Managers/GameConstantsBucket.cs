@@ -29,9 +29,8 @@ public class GameConstantsBucket : Singleton<GameConstantsBucket>
     [Tooltip("the multiplier of how many times one resource to guess rigth more than other to get the ending")]
     [SerializeField] float endingResourceDifference = 5f;
     public static float EndingResourceDifference{        get{return Instance.endingResourceDifference;}    }
-    [Range(0,10f)]
     [Tooltip("how much additional resources the player will have next match if ending is unlocked")]
-    [SerializeField] float endingResourceAward = 25f;
+    [SerializeField] float endingResourceAward = 15f;
     public static float EndingResourceAward{        get{return Instance.endingResourceAward;}    }
     
     [Header("Economy")]

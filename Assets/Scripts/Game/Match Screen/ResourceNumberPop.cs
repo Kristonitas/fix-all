@@ -18,7 +18,7 @@ public class ResourceNumberPop : MonoBehaviour
     void OnModifyResource(GameMessage msg)
     {
         if(resourceItem == msg.resourceItem){
-            Debug.Log("resource: "+msg.resourceItem);
+            //Debug.Log("resource: "+msg.resourceItem);
             GameObject newTextGO = Instantiate(textGO, transform);
             newTextGO.transform.localPosition = textGO.transform.localPosition;
             TMPro.TextMeshProUGUI tmpText = newTextGO.GetComponent<TMPro.TextMeshProUGUI>();

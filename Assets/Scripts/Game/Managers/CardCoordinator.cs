@@ -5,7 +5,7 @@ using UnityEngine;
 public class CardCoordinator : Singleton<CardCoordinator>
 {
     List<CardData> cards = new List<CardData>();
-    int currentCardIndex = 0;
+    public int currentCardIndex = 0;
     int randomSeed = 0;
     public static void AddCard(CardData newCardData){
         Instance.cards.Add(newCardData);
@@ -25,12 +25,14 @@ public class CardCoordinator : Singleton<CardCoordinator>
             Instance.currentCardIndex++;
             return nextcard;
         } else {
-            Debug.LogError("Out of cards, not enough cards in list!");
+            EventCoordinator.TriggerEvent(EventName.System.EndGame(), GameMessage.Write());
+            //Debug.LogError("Out of cards, not enough cards in list!");
             return null;
         }
     }
     public static void RandomizeCardsForPlayer(){
         Instance.randomSeed = PlayerDataBucket.GetPlayerName().GetHashCode();
+        //Debug.Log("seed:"+Instance.randomSeed);
         Random.InitState(Instance.randomSeed);
         for(int i = 0; i < Instance.cards.Count; i++){
             bool tapeIsRightResrouce  = (Random.value > 0.5f);

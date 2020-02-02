@@ -280,7 +280,7 @@ RectTransform:
   m_AnchorMin: {x: 0.8, y: 0}
   m_AnchorMax: {x: 0.8, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 19.450012, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &214621080
 MonoBehaviour:
@@ -631,6 +631,7 @@ GameObject:
   - component: {fileID: 265511935}
   - component: {fileID: 265511936}
   - component: {fileID: 265511937}
+  - component: {fileID: 265511938}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -696,6 +697,18 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 0
+--- !u!114 &265511938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265511934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b5d5aea0b30435d90b2ecfada9d6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &304238224
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &304238225
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1963,7 +1976,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 17.4
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2401,7 +2414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &976795436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2536,7 +2549,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 17.4
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3357,7 +3370,7 @@ RectTransform:
   m_AnchorMin: {x: 0.8, y: 0}
   m_AnchorMax: {x: 0.8, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 19.450012, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1369387814
 MonoBehaviour:
@@ -3445,7 +3458,7 @@ RectTransform:
   m_AnchorMin: {x: 0.8, y: 0}
   m_AnchorMax: {x: 0.8, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 19.450012, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1399174698
 MonoBehaviour:
@@ -3595,33 +3608,17 @@ MonoBehaviour:
   selectedTab: {fileID: 0}
   endingsOpen: 0
   endingTexts:
-  - 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum. '
-  - Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Vitae suscipit
-    tellus mauris a diam maecenas. Porttitor lacus luctus accumsan tortor posuere
-    ac. Tellus elementum sagittis vitae et leo. Neque volutpat ac tincidunt vitae
-    semper quis lectus nulla at. Porttitor massa id neque aliquam vestibulum morbi
-    blandit cursus risus. Ut ornare lectus sit amet est placerat in egestas erat.
-    Mauris nunc congue nisi vitae suscipit tellus mauris a diam. In mollis nunc sed
-    id semper risus in hendrerit. Leo vel orci porta non pulvinar neque. Vitae suscipit
-    tellus mauris a diam maecenas sed enim. Proin sed libero enim sed faucibus turpis
-    in. Orci sagittis eu volutpat odio facilisis. Laoreet id donec ultrices tincidunt
-    arcu non sodales neque. Ut porttitor leo a diam sollicitudin. Vestibulum sed
-    arcu non odio euismod lacinia at quis. Lectus nulla at volutpat diam ut venenatis
-    tellus in metus.
-  - Egestas purus viverra accumsan in nisl nisi scelerisque. Volutpat maecenas volutpat
-    blandit aliquam etiam erat. A iaculis at erat pellentesque adipiscing. Malesuada
-    fames ac turpis egestas sed tempus urna et. Mattis vulputate enim nulla aliquet
-    porttitor. Erat velit scelerisque in dictum non. Viverra vitae congue eu consequat
-    ac felis donec. Imperdiet sed euismod nisi porta lorem mollis. Nam aliquam sem
-    et tortor. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut.
-    Ridiculus mus mauris vitae ultricies leo integer. Orci eu lobortis elementum
-    nibh tellus molestie nunc. Feugiat in ante metus dictum. Sed viverra tellus in
-    hac. Fringilla urna porttitor rhoncus dolor purus non.
+  - Patching up your life failures, here and there, you stand one day on a situation,
+    where duck-tape is no option. The idea never even poped up before, but this might
+    actually call for a different tool. You pull out that old WD40 your friend gifted
+    you 5 years ago and prepair to face challenges ahead with some extra lubrication.
+  - Combating slippery slopes has become your forte. However, speedily whiffing though
+    life has left you with a bitter unsatisfaction, one might call it even an "oily
+    aftertaste". Sticking to things for longer might be a good idea...
+  - Perfect balance between stickyness and slipperiness was achieved and all lifegoals
+    fullfilled flawelessly. One has used a whole arsenal of tools in his life, mastering
+    almost all that could be mastered. To have more adventures and challenges, which
+    will surely enjoyed, one could take up a different name.
   text: {fileID: 1580255907}
   tabActiveColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   tabPassiveColor: {r: 0, g: 0, b: 0, a: 0}
@@ -5308,6 +5305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _persistent: 0
+  currentCardIndex: 0
 --- !u!4 &1929778587
 Transform:
   m_ObjectHideFlags: 0
@@ -5338,8 +5336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _persistent: 0
-  tapeOwned: 50
-  wdOwned: 50
+  tapeOwned: 30
+  wdOwned: 30
 --- !u!114 &1929778589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5371,6 +5369,7 @@ MonoBehaviour:
   numberTextFadeSlowdownFactor: 0.002
   endingResourceMultiplier: 2
   endingResourceDifference: 5
+  endingResourceAward: 5
   baseWrongAnswerCost: 5
   answerCostRandomRange: 1
   baseAnswerInvert: 2
@@ -5795,6 +5794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052174843}
+  - component: {fileID: 2052174844}
   m_Layer: 0
   m_Name: CardContainer
   m_TagString: Untagged
@@ -5816,6 +5816,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2052174844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052174842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b5d5aea0b30435d90b2ecfada9d6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2054099203
 GameObject:
   m_ObjectHideFlags: 0
