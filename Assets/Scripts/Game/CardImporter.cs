@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Linq;
 
 public class CardImporter
 {
@@ -49,10 +50,17 @@ public class CardImporter
     {
         TextAsset tsvText = (TextAsset)Resources.Load("cards");
         string[] records = tsvText.text.Split('\n');
-        for (int i = 1; i < records.Length; i++)
+        for (int i = 2; i < records.Length; i++)
         {
             string[] data = records[i].Split('\t');
             CardData card = MakeCard(data);
+
+            bool skip = card.answers.Any(a => a.text == "");
+            if (skip)
+            {
+                continue;
+            }
+
             CardCoordinator.AddCard(card);
         }
     }
