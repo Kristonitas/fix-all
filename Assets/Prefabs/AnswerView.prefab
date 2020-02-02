@@ -214,7 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5141125306076771659}
   m_Layer: 0
-  m_Name: ResultContent
+  m_Name: AnswerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 5141125306413930321}
   - component: {fileID: 5141125306413930318}
   m_Layer: 0
-  m_Name: Result
+  m_Name: AnswerView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMesh: {fileID: 5141125305721010455}
-  resultAnimation: {fileID: 5141125306413930318}
+  answerAnimation: {fileID: 5141125306413930318}
 --- !u!114 &5141125306413930318
 MonoBehaviour:
   m_ObjectHideFlags: 0

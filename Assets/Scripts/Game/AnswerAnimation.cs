@@ -2,7 +2,7 @@
 using UnityEngine;
 using TMPro;
 
-public class ResultAnimation : MonoBehaviour
+public class AnswerAnimation : MonoBehaviour
 {
     static float Duration = 3;
 
@@ -22,10 +22,10 @@ public class ResultAnimation : MonoBehaviour
         {
             float dt = (Time.time - start) / Duration;
 
-            float y = 1 - Mathf.Clamp01(Mathf.Pow(1 - dt * 1, 4));
+            float y = 1 - Mathf.Clamp01(Mathf.Pow(1 - dt * 1.5f, 3));
             content.localPosition = new Vector3(0, y, 0);
 
-            float alphaIn = Mathf.Clamp01(Mathf.Pow(dt * 5, 3));
+            float alphaIn = Mathf.Clamp01(Mathf.Pow(dt * 6, 3));
             float alphaOut = Mathf.Clamp01(Mathf.Pow(8 - dt * 8, 3));
             Debug.Log("in: " + alphaIn + " out: " + alphaOut);
             textMesh.alpha = Mathf.Min(alphaIn, alphaOut);
