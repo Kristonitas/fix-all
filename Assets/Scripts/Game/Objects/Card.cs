@@ -3,7 +3,6 @@
 public class Card : MonoBehaviour
 {
     public CardData cardData;
-    // public Image coverImage;
     public SpriteRenderer renderer;
 
     public Card CreateCard(CardData inputCardData)

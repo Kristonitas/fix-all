@@ -1,18 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using TMPro;
 
 public class Result : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshPro textMesh;
+    public ResultAnimation resultAnimation;
 
-    // Update is called once per frame
-    void Update()
+    public Result CreateCard(Answer answer)
     {
-        
+        GameObject newResultGO = Instantiate(this.gameObject);
+        Result newResult = newResultGO.GetComponent<Result>();
+        newResult.textMesh.text = answer.text;
+        newResult.textMesh.color = answer.good ? Color.green : Color.red;
+        newResult.resultAnimation.SetAnswer(answer);
+
+        return newResult;
     }
 }
