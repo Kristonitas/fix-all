@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unity WebGL Player | Fix All</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/fix-all-web.json"
+      );
+    </script>
+  </head>
+  <body>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <div id="unityContainer" style="width: 56.25vh; height: 100vh"></div>
+  </body>
+</html>
