@@ -75,24 +75,24 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	72				
 	73				
 	74				
-	75				
+	75	Sliping the hardware down to gates of hell	Grease the gearsing of your machine 	Stick it to the troubleshooter	Just glue the screen and forget about it
 	76				
 	77				
 	78				
 	79				
 	80				
 	81				
-	82				
+	82	Oil the acumulator and spin it to ressurection	WD40 seems to be to strong fueling  batteries	Gluing several batteries together seem to hold	Sticking devices to the live wires is bad idea
 	83				
 	84				
 	85	WD40 o`colone will repel anything	You polish the mirror but still cant see no vampire with it	Ductape crosses all over the place to scare the monster	Tape yourself - vampires do not eat mumies
 	86				
-	87				
+	87	Grease yourself to slide down where you need to	Vengful oiling of signs restored your honor	Just stick to walls	Fixing broken items and limbs makes you feel better
 	88				
 	89				
 	90	Blow the peal away and have a snack	You have slipped	Stick it where it belongs	Wrap it to keep it fresh and safe
-	91				
-	92				
+	91	Fight fire with fire	Bloing out fire did not work as predicted	Suficate the fire with a ductape blanket	Tieing noodles to pull out it out of fire lost you the dinner
+	92	Grease thehooks to fish it out	Seems its not the ebst time to oil the car now	Taping yourself to lifejacket finaly came in handy	Taping car to the dock didn`t pull it
 	93	Lubricate the negotioations	The island slips even further away	We need more ductape	You build a free duct tape bridge
 	94	Slips it out of the pool	Soil the watter to lift the dog out on oil	You stick to religion and start walking on water	Turn it into a rubber duck
 	95	Blow all your problems away with WD40	You slipped into bed again 	Wrap all your negative emotions	You forget how to breathe now
