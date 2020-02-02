@@ -4,8 +4,20 @@ using UnityEngine;
 using TMPro;
 public class PlayerNameInput : MonoBehaviour
 {
-    public void InputEditedCallback(string inputName)
+    string inputName;
+    void Start(){
+        EventCoordinator.StartListening(EventName.Input.StartGame(), OnStartGame);
+        inputName = PlayerPrefs.GetString("playerName");
+        if(inputName != "")
+            GetComponentInChildren<TMP_InputField>().text = inputName;
+    }
+    public void InputEditedCallback(string _inputName)
     {
-        PlayerDataBucket.SetPlayerName(inputName);
+        inputName = _inputName;
+        PlayerDataBucket.SetPlayerName(_inputName);
+    }
+    void OnStartGame(GameMessage msg){
+        PlayerPrefs.SetString("playerName", inputName);
+        PlayerPrefs.Save();
     }
 }

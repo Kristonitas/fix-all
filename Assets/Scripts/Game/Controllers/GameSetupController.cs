@@ -15,7 +15,13 @@ public class GameSetupController : MonoBehaviour
     void OnCardsImported(GameMessage msg)
     {
         CardCoordinator.RandomizeCardsForPlayer();
-        EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(0).WithResource(ResourceItem.Ductape));
-        EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(0).WithResource(ResourceItem.Wd));
+        float wdAmount = 0;
+        float tapeAmount = 0;
+        if(PlayerPrefs.GetInt("Ending1") > 0)
+            wdAmount += GameConstantsBucket.EndingResourceAward;
+        if(PlayerPrefs.GetInt("Ending2") > 0)
+            tapeAmount += GameConstantsBucket.EndingResourceAward;
+        EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(tapeAmount).WithResource(ResourceItem.Ductape));
+        EventCoordinator.TriggerEvent(EventName.System.Economy.ModifyResource(), GameMessage.Write().WithFloatMessage(wdAmount).WithResource(ResourceItem.Wd));
     }
 }
