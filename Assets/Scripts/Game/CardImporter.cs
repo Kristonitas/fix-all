@@ -2,34 +2,40 @@
 
 public class CardImporter
 {
+    private static int RowDuctapeGood = 4;
+    private static int RowDuctapeBad = 5;
+    private static int RowWdGood = 2;
+    private static int RowWdBad = 3;
+
+
     private static CardData MakeCard(string[] data)
     {
-        Sprite cover = Resources.Load<Sprite>("content pictures/"+data[1]);
+        Sprite cover = Resources.Load<Sprite>("content pictures/" + data[1]);
 
         Answer ductapeGood, ductapeBad, wdGood, wdBad;
 
         ductapeGood = new Answer();
         ductapeGood.resource = ResourceItem.Ductape;
         ductapeGood.good = true;
-        ductapeGood.text = data[2];
+        ductapeGood.text = data[RowDuctapeGood];
         ductapeGood.cost = 1;
 
         ductapeBad = new Answer();
         ductapeBad.resource = ResourceItem.Ductape;
         ductapeBad.good = false;
-        ductapeBad.text = data[3];
+        ductapeBad.text = data[RowDuctapeBad];
         ductapeBad.cost = 1;
 
         wdGood = new Answer();
         wdGood.resource = ResourceItem.Wd;
         wdGood.good = true;
-        wdGood.text = data[4];
+        wdGood.text = data[RowWdGood];
         wdGood.cost = 1;
 
         wdBad = new Answer();
         wdBad.resource = ResourceItem.Wd;
         wdBad.good = false;
-        wdBad.text = data[5];
+        wdBad.text = data[RowWdBad];
         wdBad.cost = 1;
 
         CardData card = new CardData();

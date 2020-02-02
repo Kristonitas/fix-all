@@ -1,2 +1,15 @@
-Name	Image	DucktapeGOOD	DucktapeBAD	WdGOOD	WdBAD
+Name	Image	WdGOOD	WdBAD	DuctapeGOOD	DuctapeBAD
 Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french started a revolution, because you fixed all the pieces together	There is no olive oil in the house, WD40 is a good replacement though	Your oven caught on fire
+	0	Dims the glasses	Morpheus sneezes	You steal both of them	You destick you Matrix
+	1	Everybody slides back home	Everybody starts sliding in endless circles	You fix the broken windows	You create a Mecha robot.
+	2	You slide to the bathroom quickly	You burn down	You quicky rip all your hair off.	You get stuck to the chair and burn down
+	3	The Koala slipps out	Koala gets nervous	You split the beams	Koala thinks you're more trouble
+	4	This whole accident slipps your mind	You protect your windows from the snow	You stick and pull your work building to this place	'Ufo did this'' you realize
+	5	You slip, drop your groceries and meet your new love	You can't remember whom you dated anymore	You stick to self improvment lifestyle	Now you have a duct tape heart
+	6	The stains are removed from her clothes	Now she cant smell anything either	Sticks a new face on	She can't speak anymore either
+	7	The horror got swept away	Your skin is agitated	It`s pretty now	You can trace a new drawing now
+	8	Everything is smooth now	You can't eat that anymore	The kids can't see the mistake when they are stuck to the ceiling	It's split in two now
+	9	You sniff the WD	Text transfers to your clothes	You mask the rezult	You now have a test on your head
+	10	It's not dirty anymore	Now the camera is broken too	The next one you stick to your hand	You can't see the screen anymore
+	11	You oil the wheels for a smooth ride	Sprayed the whole sky is on fire	You wrap yourself in for a comfy landing	You made a ductape parachute and off you go
+	12	The legos are clean now	You slip and fall on your back. on the legos	You make a tape shoe	You don't play your Lego like that
