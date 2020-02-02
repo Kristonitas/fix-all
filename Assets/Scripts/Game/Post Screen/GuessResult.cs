@@ -10,11 +10,10 @@ public class GuessResult
     public string resultText;
     public bool correct;
     public GuessResult(CardData data, ResourceItem resource){
-        Answer answer = data.answers.Where(x => x.good && x.resource == resource).FirstOrDefault();
+        correct = (data.correctResrouce == resource);
+        Answer answer = data.answers.Where(x => (x.good == correct) && x.resource == resource).FirstOrDefault();
         float newAmount = answer.cost;
-        if(newAmount > 0)
-            correct = false;
-        amount = newAmount.ToString();
+        amount = (Mathf.Round(newAmount * 10f) / 10f).ToString();
         imageGuessed = data.coverImage;
         resultText = answer.text;
         resourceUsed = resource;

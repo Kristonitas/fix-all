@@ -11,18 +11,17 @@ public class CardFactory : MonoBehaviour
 
     void Start()
     {
-        CardImporter.Import();
-        CreateCard();
-
         // TODO: move out of CardFactory
         EventCoordinator.StartListening(EventName.Input.Swipe.FinishRight(), OnSwipeRight);
         EventCoordinator.StartListening(EventName.Input.Swipe.FinishLeft(), OnSwipeLeft);
+        EventCoordinator.StartListening(EventName.System.MatchStarted(), OnMatchStarted);
     }
 
     void OnDestroy()
     {
         EventCoordinator.StopListening(EventName.Input.Swipe.FinishRight(), OnSwipeRight);
         EventCoordinator.StopListening(EventName.Input.Swipe.FinishLeft(), OnSwipeLeft);
+        EventCoordinator.StopListening(EventName.System.MatchStarted(), OnMatchStarted);
     }
 
     void CreateCard()
@@ -48,5 +47,9 @@ public class CardFactory : MonoBehaviour
     {
         EventCoordinator.TriggerEvent(EventName.Input.CardSelected(), GameMessage.Write().WithCardData(msg.cardData).WithResource(LeftSwipeResource));
         StartCoroutine(DelayCreateCard());
+    }
+    void OnMatchStarted(GameMessage msg){
+        CardImporter.Import();
+        CreateCard();
     }
 }

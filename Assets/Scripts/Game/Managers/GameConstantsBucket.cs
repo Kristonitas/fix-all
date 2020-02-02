@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameConstantsBucket : Singleton<GameConstantsBucket>
 {
-    [Header("Colors")]
+    [Header("Fx")]
     [Tooltip("Text which floats when resources decrease")]
     [SerializeField] Color resourceColorNegative = Color.red;
     public static Color ResourceColorNegative{        get{return Instance.resourceColorNegative;}    }
@@ -20,6 +20,7 @@ public class GameConstantsBucket : Singleton<GameConstantsBucket>
     [Tooltip("Text floats how much does this slow down over time")]
     [SerializeField] float numberTextFadeSlowdownFactor = 0.002f;
     public static float NumberTextFadeSlowdownFactor{        get{return Instance.numberTextFadeSlowdownFactor;}    }
+    [Header("Story")]
     [Range(0,5f)]
     [Tooltip("the multiplier of how many times one resource to guess rigth more than other to get the ending")]
     [SerializeField] float endingResourceMultiplier = 2f;
@@ -28,5 +29,14 @@ public class GameConstantsBucket : Singleton<GameConstantsBucket>
     [Tooltip("the multiplier of how many times one resource to guess rigth more than other to get the ending")]
     [SerializeField] float endingResourceDifference = 5f;
     public static float EndingResourceDifference{        get{return Instance.endingResourceDifference;}    }
-
+    [Header("Economy")]
+    [Tooltip("wrong reward value = base wrong + randomrange")]
+    [SerializeField] float baseWrongAnswerCost = 5f;
+    public static float BaseWrongAnswerCost{        get{return Instance.baseWrongAnswerCost;}    }
+    [Tooltip("correct reward value = base answer invert - base wrong + randomrange")]
+    [SerializeField] float answerCostRandomRange = 1f;
+    public static float AnswerCostRandomRange{        get{return Instance.answerCostRandomRange;}    }
+    [Tooltip("correct reward value = base answer invert - base wrong + randomrange")]
+    [SerializeField] float baseAnswerInvert = 2f;
+    public static float BaseAnswerInvert{        get{return Instance.baseAnswerInvert;}    }
 }

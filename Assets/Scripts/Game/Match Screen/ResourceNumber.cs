@@ -17,7 +17,7 @@ public class ResourceNumber : MonoBehaviour
     void OnModifyResource(GameMessage msg)
     {
         if(resourceItem == msg.resourceItem){
-            text.text = msg.floatMessage.ToString();
+            text.text = (Mathf.Round(msg.floatMessage * 10f) / 10f).ToString();
         }
     }
 }

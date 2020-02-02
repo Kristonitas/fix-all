@@ -25,11 +25,11 @@ public class ResourceNumberPop : MonoBehaviour
 
             NumberPopDissolveFx fx = newTextGO.AddComponent<NumberPopDissolveFx>();
             if(msg.floatMessage < 0){
-                tmpText.text = msg.floatMessage.ToString();
+                tmpText.text = (Mathf.Round(msg.floatMessage * 10f) / 10f).ToString();
                 tmpText.color = GameConstantsBucket.ResourceColorNegative;
             }
             else{
-                tmpText.text = "+"+msg.floatMessage.ToString();
+                tmpText.text = "+"+(Mathf.Round(msg.floatMessage * 10f) / 10f).ToString();
                 tmpText.color = GameConstantsBucket.ResourceColorPositive;
             }
             fx.Init(tmpText);

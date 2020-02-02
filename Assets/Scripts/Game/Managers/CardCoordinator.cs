@@ -6,6 +6,7 @@ public class CardCoordinator : Singleton<CardCoordinator>
 {
     List<CardData> cards = new List<CardData>();
     int currentCardIndex = 0;
+    int randomSeed = 0;
     public static void AddCard(CardData newCardData){
         Instance.cards.Add(newCardData);
     }
@@ -27,7 +28,8 @@ public class CardCoordinator : Singleton<CardCoordinator>
         }
     }
     public static void RandomizeCardsForPlayer(){
-        Random.InitState(PlayerDataBucket.GetPlayerName().GetHashCode());
+        Instance.randomSeed = PlayerDataBucket.GetPlayerName().GetHashCode();
+        Random.InitState(Instance.randomSeed);
         for(int i = 0; i < Instance.cards.Count; i++){
             bool tapeIsRightResrouce  = (Random.value > 0.5f);
             if(tapeIsRightResrouce)
@@ -40,5 +42,15 @@ public class CardCoordinator : Singleton<CardCoordinator>
             Instance.cards[i] = Instance.cards[randomIndex];
             Instance.cards[randomIndex] = tempCard;
         }
+    }
+    public static float GetRandomizedReward(Answer answer){
+        Random.InitState(Instance.randomSeed);
+        float randomval = Random.Range(-GameConstantsBucket.AnswerCostRandomRange, GameConstantsBucket.AnswerCostRandomRange);
+        float amount = 0;
+        if(answer.good)
+            amount = GameConstantsBucket.BaseAnswerInvert - GameConstantsBucket.BaseWrongAnswerCost + randomval;
+        else
+            amount = GameConstantsBucket.BaseWrongAnswerCost + randomval;
+        return amount;
     }
 }   

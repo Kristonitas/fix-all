@@ -18,25 +18,25 @@ public class CardImporter
         ductapeGood.resource = ResourceItem.Ductape;
         ductapeGood.good = true;
         ductapeGood.text = data[RowDuctapeGood];
-        ductapeGood.cost = 1;
+        ductapeGood.cost = CardCoordinator.GetRandomizedReward(ductapeGood);
 
         ductapeBad = new Answer();
         ductapeBad.resource = ResourceItem.Ductape;
         ductapeBad.good = false;
         ductapeBad.text = data[RowDuctapeBad];
-        ductapeBad.cost = 1;
+        ductapeBad.cost = CardCoordinator.GetRandomizedReward(ductapeBad);
 
         wdGood = new Answer();
         wdGood.resource = ResourceItem.Wd;
         wdGood.good = true;
         wdGood.text = data[RowWdGood];
-        wdGood.cost = 1;
+        wdGood.cost = CardCoordinator.GetRandomizedReward(wdGood);
 
         wdBad = new Answer();
         wdBad.resource = ResourceItem.Wd;
         wdBad.good = false;
         wdBad.text = data[RowWdBad];
-        wdBad.cost = 1;
+        wdBad.cost = CardCoordinator.GetRandomizedReward(wdBad);
 
         CardData card = new CardData();
 
