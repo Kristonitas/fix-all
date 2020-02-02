@@ -3,8 +3,8 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	0	Dims the glasses	Morpheus sneezes	You steal both of them	You unstick your Matrix
 	1	Everybody slides back home	Everybody starts sliding in endless circles	You fix the broken windows	You create a Mecha robot
 	2	You slide to the bathroom quickly	You burn down like a torch	You quicky rip all your hair off	You get stuck to the chair and burn down
-	3	The Koala slipps out	Koala gets nervous	You split the beams	Koala thinks you're more trouble
-	4	This whole accident slipps your mind	You protect your windows from the snow	You stick and pull your work building to this place	'Ufo did this'' you realize
+	3	The Koala slips out	Koala gets nervous	You split the beams	Koala thinks you're more trouble
+	4	This whole accident slips your mind	You protect your windows from the snow	You stick and pull your work building to this place	'Ufo did this'' you realize
 	5	You slip, drop your groceries and meet your new love	You can't remember whom you dated anymore	You stick to self improvement lifestyle	Taped heart holds only until next Friday
 	6	The stains are removed from her clothes	Now she cant smell anything either	Sticks a new face on	She can't speak anymore either
 	7	The horror got swept away	Your skin is agitated	It`s pretty now	You can trace a new drawing now
@@ -15,7 +15,7 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	12	The legos are clean now	You slip and fall on your back... on the legos	You make a tape shoe	You don't play your Lego like that
 	13	You slip off all your clothes	Now its off completely	You have acquired a new accessory	Now it won't move at all
 	14	The text is blurred now - so no mistakes there	You will never erase this stain off yourself	You stick it over the mistakes	You are one of them now
-	15	The arrow now slipps through cleanly	She is not afraid of that	You immobilize her smile	She falls in love with you
+	15	The arrow now slips through cleanly	She is not afraid of that	You immobilize her smile	She falls in love with you
 	16	You won't slip like that, ever!	You are married now. Congratulations	You make knee armor	You can't walk anymore
 	17	Keyboard is now typing so very smoothly	Coffee have lost it`s taste now	Make a duct-tape cup and just continue drinking your coffee	You only type in full words now
 	18	You slip unnoticed	Unfortunately your pants are on fire	Your pants are whole again	Watch out for the fashion police
@@ -63,7 +63,7 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	60	You spill WD40 to make them all slip	You try to extinguish the flames with WD40	You you leave tape upside down to make tme all stick around	You make ductape ribons to make them look pretty
 	61	You run like a well oiled machine	You oil the machine	You wrap a new skin and make it soft and friendly	You wrap a new skin and make it soft and friendly
 	62	You push it back in with the mighty WD40 spray	You try tu burn it with the mighty WD40 but it explodes	You damn the geyzer with tape wall	You try to plug the hole in the ground
-	63	You blow an air cushin to reduce the impact	You oil the ground to let help it flip back up	You lasso the girl out of danger	You tape the ground to protect the grass
+	63	You blow an air cushion to reduce the impact	You oil the ground to let help it flip back up	You lasso the girl out of danger	You tape the ground to protect the grass
 	64				
 	65				
 	66				
@@ -75,7 +75,7 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	72				
 	73				
 	74				
-	75	Sliping the hardware down to gates of hell	Grease the gearsing of your machine 	Stick it to the troubleshooter	Just glue the screen and forget about it
+	75	Slipping the hardware down to gates of hell	Grease the gearsing of your machine 	Stick it to the troubleshooter	Just glue the screen and forget about it
 	76				
 	77				
 	78				
