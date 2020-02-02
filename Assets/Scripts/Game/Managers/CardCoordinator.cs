@@ -5,7 +5,7 @@ using UnityEngine;
 public class CardCoordinator : Singleton<CardCoordinator>
 {
     List<CardData> cards = new List<CardData>();
-
+    int currentCardIndex = 0;
     public static void AddCard(CardData newCardData){
         Instance.cards.Add(newCardData);
     }
@@ -18,7 +18,14 @@ public class CardCoordinator : Singleton<CardCoordinator>
             return null;
         }
     }
-
+    public static CardData GetNextCardData(){
+        if(Instance.cards.Count > Instance.currentCardIndex){
+            return Instance.cards[Instance.currentCardIndex];
+        } else {
+            Debug.LogError("Out of cards, not enough cards in list!");
+            return null;
+        }
+    }
     public static void RandomizeCardsForPlayer(){
         Random.InitState(PlayerDataBucket.GetPlayerName().GetHashCode());
         for(int i = 0; i < Instance.cards.Count; i++){
