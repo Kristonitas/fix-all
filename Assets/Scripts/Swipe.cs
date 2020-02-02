@@ -44,6 +44,8 @@ public class Swipe : MonoBehaviour
 
     void Update()
     {
+        if(!GameStateView.HasState(GameState.started) && !GameStateView.HasState(GameState.ended))
+            return;
         HandleInput();
         UpdateReleased();
         UpdateVolume();

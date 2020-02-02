@@ -21,7 +21,7 @@ public class CardFactory : MonoBehaviour
 
     void CreateCard()
     {
-        CardData cardData = CardCoordinator.GetCard(0);
+        CardData cardData = CardCoordinator.GetNextCardData();
         Card card = this.cardPrefab.CreateCard(cardData);
         card.transform.parent = cardContainer;
     }
