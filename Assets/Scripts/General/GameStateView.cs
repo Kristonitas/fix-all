@@ -10,10 +10,12 @@ public class GameStateView : Singleton<GameStateView>
     void Start()
     {
         EventCoordinator.StartListening(EventName.Input.StartGame(), OnStartGame);
+        EventCoordinator.StartListening(EventName.Input.ResetGame(), OnResetGame);
         EventCoordinator.StartListening(EventName.System.EndGame(), OnEndGame);
     }
     void OnDestroy(){
         EventCoordinator.StopListening(EventName.Input.StartGame(), OnStartGame);
+        EventCoordinator.StartListening(EventName.Input.ResetGame(), OnResetGame);
         EventCoordinator.StopListening(EventName.System.EndGame(), OnEndGame);
     }
     void OnStartGame(GameMessage msg){
@@ -24,9 +26,9 @@ public class GameStateView : Singleton<GameStateView>
     void OnEndGame(GameMessage msg){
         FlagsHelper.Set(ref currentState, GameState.ended);
     }
-    void OnArenaAnimated(GameMessage msg){
-        // Set a bit at position to 0.
-        FlagsHelper.Unset(ref currentState, GameState.arenaAnimating);
+    void OnResetGame(GameMessage msg){
+        FlagsHelper.Unset(ref currentState, GameState.ended);
+        FlagsHelper.Unset(ref currentState, GameState.started);
     }
     void OnArenaAnimating(GameMessage msg){
         FlagsHelper.Set(ref currentState, GameState.arenaAnimating);

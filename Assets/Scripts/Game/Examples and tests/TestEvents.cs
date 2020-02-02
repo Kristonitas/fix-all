@@ -15,6 +15,8 @@ public class TestEvents : MonoBehaviour
             EventCoordinator.TriggerEvent(EventName.System.Story.UnlockEnding(), GameMessage.Write().WithIntMessage(2));
         if(Input.GetKeyDown(KeyCode.Keypad3))
             EventCoordinator.TriggerEvent(EventName.System.Story.UnlockEnding(), GameMessage.Write().WithIntMessage(3));
+        if(Input.GetKeyDown(KeyCode.E))
+            EventCoordinator.TriggerEvent(EventName.System.EndGame(), GameMessage.Write());
         
     }
 }
