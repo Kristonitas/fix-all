@@ -1,25 +1,25 @@
 Name	Image	WdGOOD	WdBAD	DuctapeGOOD	DuctapeBAD
 Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french started a revolution, because you fixed all the pieces together	There is no olive oil in the house, WD40 is a good replacement though	Your oven caught on fire
-	0	Dims the glasses	Morpheus sneezes	You steal both of them	You destick you Matrix
-	1	Everybody slides back home	Everybody starts sliding in endless circles	You fix the broken windows	You create a Mecha robot.
-	2	You slide to the bathroom quickly	You burn down	You quicky rip all your hair off.	You get stuck to the chair and burn down
+	0	Dims the glasses	Morpheus sneezes	You steal both of them	You unstick your Matrix
+	1	Everybody slides back home	Everybody starts sliding in endless circles	You fix the broken windows	You create a Mecha robot
+	2	You slide to the bathroom quickly	You burn down like a torch	You quicky rip all your hair off	You get stuck to the chair and burn down
 	3	The Koala slipps out	Koala gets nervous	You split the beams	Koala thinks you're more trouble
 	4	This whole accident slipps your mind	You protect your windows from the snow	You stick and pull your work building to this place	'Ufo did this'' you realize
-	5	You slip, drop your groceries and meet your new love	You can't remember whom you dated anymore	You stick to self improvment lifestyle	Now you have a duct tape heart
+	5	You slip, drop your groceries and meet your new love	You can't remember whom you dated anymore	You stick to self improvement lifestyle	Taped heart holds only until next Friday
 	6	The stains are removed from her clothes	Now she cant smell anything either	Sticks a new face on	She can't speak anymore either
 	7	The horror got swept away	Your skin is agitated	It`s pretty now	You can trace a new drawing now
 	8	Everything is smooth now	You can't eat that anymore	The kids can't see the mistake when they are stuck to the ceiling	It's split in two now
-	9	You sniff the WD	Text transfers to your clothes	You mask the rezult	You now have a test on your head
+	9	You sniff the WD	Text transfers to your clothes	You mask the result	You now have a test on your head
 	10	It's not dirty anymore	Now the camera is broken too	The next one you stick to your hand	You can't see the screen anymore
 	11	You oil the wheels for a smooth ride	Sprayed the whole sky is on fire	You wrap yourself in for a comfy landing	You made a ductape parachute and off you go
-	12	The legos are clean now	You slip and fall on your back. on the legos	You make a tape shoe	You don't play your Lego like that
+	12	The legos are clean now	You slip and fall on your back... on the legos	You make a tape shoe	You don't play your Lego like that
 	13	You slip off all your clothes	Now its off completely	You have acquired a new accessory	Now it won't move at all
-	14	The text is blurred now - so no mistakes there	You will never erase this stain on yourself	You stick it on the mistakes	You are one of them now
+	14	The text is blurred now - so no mistakes there	You will never erase this stain off yourself	You stick it over the mistakes	You are one of them now
 	15	The arrow now slipps through cleanly	She is not afraid of that	You immobilize her smile	She falls in love with you
 	16	You won't slip like that, ever!	You are married now. Congratulations	You make knee armor	You can't walk anymore
-	17	Keyboard is now typing so very smoothly	Coffee have lost it`s taste now	Make a ductape cup and just continue drinking your coffee	You only type in full words now
-	18	You slip unnoticed	Unfortunately your pants is on fire	Your pants are whole again	Watch out for the fashion police
-	19	The WD oils your brain	Now you can't remember anything anymore	you remember you password is stuck on your forehead	You stick and pull your all your hair out and still can't remember
+	17	Keyboard is now typing so very smoothly	Coffee have lost it`s taste now	Make a duct-tape cup and just continue drinking your coffee	You only type in full words now
+	18	You slip unnoticed	Unfortunately your pants are on fire	Your pants are whole again	Watch out for the fashion police
+	19	The WD oils your brain	Now you can't remember anything anymore	you remember your password is stuck on your forehead	You stick and pull your all your hair out but still can't remember
 	20	Slide away smoother than anyone ever did	Just oil your car and drive away	You have just discovered a multi-blade shovel congratulations	Tape yourself to a shovel and blisfuly glide away from responsabilities
 	21	You skip the song	You can't hear anything anymore	You isolate you ears from the noice	Now that song is stuck in your head forever
 	22	You get high on the fumes and all seems fine	You get poisoned on the fumes you tried to inhale	You play a prank	You can't mask that
@@ -36,20 +36,20 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	33	You slip the lock of your neighbour and start living there	London's burning	You make a tape house to live in	You get stuck to the hot hot iron
 	34	Your hair is slipery shiny now	Your hair smells now	You stick to it and finish hairbrushing nicely	Your hair is sticky now too
 	35	Wallet slips the thief's hand and you hear it	The wallet slips away on it's own	You duct tape your wallets to yourself for life	You can't open your wallet anymore
-	36	Whats stuck is out now	You drink the WD		
-	37				
-	38				
-	39				
+	36	Whats stuck is out now	You drink the WD	You duct tape emergency number	It's stuck there for good
+	37	You slip out	You become a centipede	Fight duct tape with duct tape	You're a mummy now
+	38	You become a year's exterminator	This is the mutated roach who likes WD like you do	You duct and frame one of the bastards	You can't open the doors nor windows anymore
+	39	Rub DW40 in a wound to kill the poison	You lubricate snake to help it shed away 	You rip your skin off to stop poison from spreading	You glue bite hole to top leaking
 	40	You rince it all away to cleanliness	You have smoothed the extraction 	You succesfuly funneled it out	You have manned up and kept it all together
 	41				
 	42				
 	43			No more plot holes there is	Lets stick it to the cavalery
 	44				
-	45	You heat it up to relieve pain	You oil the cover for more smoother transitions		
+	45	You heat it up to relieve pain	You oil the cover for more smoother transitions	You tape a fence around this evil corner to keep everyone safe	You craft ductape shoes to protect you
 	46				
 	47				
 	48				
-	49				
+	49	You spray all the chemtrails away	You blew the illuminati away	You fence yourself from all the reptiloids	You glue together a wall to protect yourself from masons
 	50				
 	51				
 	52				
@@ -59,18 +59,18 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	56				
 	57				
 	58				
-	59				
-	60				
-	61				
-	62				
-	63				
+	59				Tape your pc camera to ave you
+	60	You spill WD40 to make them all slip	You try to extinguish the flames with WD40	You you leave tape upside down to make tme all stick around	You make ductape ribons to make them look pretty
+	61	You run like a well oiled machine	You oil the machine	You wrap a new skin and make it soft and friendly	You wrap a new skin and make it soft and friendly
+	62	You push it back in with the mighty WD40 spray	You try tu burn it with the mighty WD40 but it explodes	You damn the geyzer with tape wall	You try to plug the hole in the ground
+	63	You blow an air cushin to reduce the impact	You oil the ground to let help it flip back up	You lasso the girl out of danger	You tape the ground to protect the grass
 	64				
 	65				
 	66				
 	67				
 	68				
 	69	You slip pass by the knight	Oh you`ve slipped sir	You don`t have flesh wounds any more	You came back for a rematch
-	70				
+	70	You heat the pizza	You season the pizza		
 	71				
 	72				
 	73				
@@ -93,6 +93,6 @@ Frozen Pizza	frozen_pizza	You made on oven mitt to safely prepare it	The french 
 	90	Blow the peal away and have a snack	Oh my you have slipped	Stick it where it belongs	Wrap it to keep it fresh and safe
 	91				
 	92				
-	93				
-	94				You can swim like a duck now
-	95	Blow all your problems away with WD40	You slipped into bed again 		
+	93	You blow all water now u can go through walls			
+	94	Blow all waves away and swim like Meilutyte	ups, you hit your head to the floor	Now You can walk on water like jesus	You can swim like a duck now
+	95	Blow all your problems away with WD40	You slipped into bed again 	Wrap all your negative emotions	You forget how to breathe now
