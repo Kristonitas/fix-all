@@ -45,6 +45,7 @@ public class Swipe : MonoBehaviour
     void Update()
     {
         HandleInput();
+        UpdateReleased();
         UpdateVolume();
 
         transform.localPosition = new Vector3(this.start.x, (this.verticalOffset - this.swipeRadius) * this.AnchorMultiplier + this.start.y, 0);
@@ -53,6 +54,11 @@ public class Swipe : MonoBehaviour
 
     void HandleInput()
     {
+        if (this.goOut)
+        {
+            return;
+        }
+
         var worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         var localPos = transform.parent.InverseTransformPoint(worldPos);
 
@@ -118,22 +124,6 @@ public class Swipe : MonoBehaviour
                     this.volume = 2;
                 }
             }
-
-
-            if (this.goOut)
-            {
-                this.rotation = this.rotation * Mathf.Pow(1.1f, Time.deltaTime * 10);
-                this.rotation += 40 * Time.deltaTime * Mathf.Sign(this.rotation);
-                if (Mathf.Abs(this.rotation) > 50)
-                {
-                    GameObject.Destroy(gameObject);
-                }
-            }
-            else
-            {
-                this.rotation = this.rotation * Mathf.Pow(0.5f, Time.deltaTime * 10);
-                this.verticalOffset = this.verticalOffset * Mathf.Pow(0.5f, Time.deltaTime * 10);
-            }
         }
     }
 
@@ -159,6 +149,24 @@ public class Swipe : MonoBehaviour
         {
             this.leftAudio.volume = clippedVolume;
             this.rightAudio.volume = 0;
+        }
+    }
+
+    void UpdateReleased()
+    {
+        if (this.goOut)
+        {
+            this.rotation = this.rotation * Mathf.Pow(1.1f, Time.deltaTime * 10);
+            this.rotation += 40 * Time.deltaTime * Mathf.Sign(this.rotation);
+            if (Mathf.Abs(this.rotation) > 50)
+            {
+                GameObject.Destroy(gameObject);
+            }
+        }
+        else if (!Input.GetMouseButton(0))
+        {
+            this.rotation = this.rotation * Mathf.Pow(0.5f, Time.deltaTime * 10);
+            this.verticalOffset = this.verticalOffset * Mathf.Pow(0.5f, Time.deltaTime * 10);
         }
     }
 
