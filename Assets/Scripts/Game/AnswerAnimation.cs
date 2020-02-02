@@ -4,7 +4,7 @@ using TMPro;
 
 public class AnswerAnimation : MonoBehaviour
 {
-    static float Duration = 3;
+    static float Duration = 2;
 
     public TextMeshPro textMesh;
     public Transform content;
@@ -27,7 +27,6 @@ public class AnswerAnimation : MonoBehaviour
 
             float alphaIn = Mathf.Clamp01(Mathf.Pow(dt * 6, 3));
             float alphaOut = Mathf.Clamp01(Mathf.Pow(8 - dt * 8, 3));
-            Debug.Log("in: " + alphaIn + " out: " + alphaOut);
             textMesh.alpha = Mathf.Min(alphaIn, alphaOut);
 
             yield return null;
